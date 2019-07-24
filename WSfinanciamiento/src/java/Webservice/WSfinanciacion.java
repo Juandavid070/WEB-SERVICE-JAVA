@@ -30,13 +30,7 @@ public class WSfinanciacion {
       
         List datos=dao.obtenerCotizacion(cantidad);
        
-        
-        if(datos == null || datos.isEmpty()){
             
-            datos.clear();
-            datos.add("No hay socio disponible");
-        }
-       
         
         return datos;
     }
