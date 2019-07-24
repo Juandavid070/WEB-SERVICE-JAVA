@@ -15,5 +15,4 @@ WEB SERVICE SOAP
    sobre WSfinancicion en la opción que dice test web service.
  y la segunda usando la aplicacion soapui poniendo la  WSDL : http://localhost:8080/WSfinanciamiento/WSfinanciacion?WSDL
 
-4 : Descargar la carpeta que dice WSclient e importarla al IDE NetBeans ejecular el proyecto 
-    el consumo del web service se evidencia en la parte inferiro.
+4 : Descargar la carpeta que dice WSclient e importarla al IDE NetBeans ejecutar archivo que dice index.jsp el consumo del web service se evidencia en la parte inferiro.
