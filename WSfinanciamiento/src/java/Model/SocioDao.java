@@ -30,6 +30,7 @@ public class SocioDao {
     double n = 0;
     double cuota = 0;
     
+    
   public List obtenerCotizacion(double cantidad) {
       List <Socio> datos = new ArrayList<>();
       String sql = "select * from socios";
@@ -50,14 +51,14 @@ public class SocioDao {
                double mod = rs.getDouble("monto_maximo") - cantidad; 
                
                  if(rs.getDouble("monto_maximo")>= cantidad && mod >= 0 && mod <= res ){
-                     datos.clear();
-                   res = mod;
+                   datos.clear();
+                   
                    
                    double  vf, va, i, n,cuota;
                    va = cantidad;
                    i = Float.parseFloat(rs.getString("tasa"))/100;
                    n = 36;
-                   DecimalFormat formato = new DecimalFormat("#.00");
+                   //DecimalFormat formato = new DecimalFormat("#.00");
                    vf = va * (1+n*i);
                    cuota = vf/n;
                    cuota = Math.round(cuota * 100) / 100d;
